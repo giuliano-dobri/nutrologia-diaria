@@ -25,16 +25,6 @@ repository: "giuliano-dobri/nutrologia-diaria"
 locale: "pt-BR"
 timezone: "America/Sao_Paulo"
 
-# =============================================================================
-# AUTOR (rodapé e metadados) [REPLICAR se quiser]
-# =============================================================================
-# Por enquanto sem nome do autor exibido no header.
-# O footer mostra apenas "© 2026 Giuliano P. Dobri" (configurado abaixo).
-author:
-  name: ""
-  avatar: ""
-  bio: ""
-  location: ""
 
 # =============================================================================
 # CONFIGURAÇÕES DE BUILD (não alterar a menos que saiba o que faz)
