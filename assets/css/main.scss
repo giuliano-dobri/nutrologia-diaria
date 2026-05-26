@@ -1,0 +1,39 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+// =============================================================================
+// CUSTOMIZAÇÕES — Editorial Diário de Nutrologia
+// =============================================================================
+// Este arquivo sobrescreve variáveis do tema minimal-mistakes ANTES da importação
+// do tema. Tudo que está aqui só afeta telas grandes — mobile permanece intacto.
+// =============================================================================
+
+// -----------------------------------------------------------------------------
+// 1. Largura máxima do site (afeta APENAS desktop, ≥1024px)
+// -----------------------------------------------------------------------------
+// Default do tema: 1280px. Aumentamos para 1500px para melhor aproveitamento
+// de tela em monitores médios e grandes. Mobile usa CSS responsivo e não é
+// afetado por essa variável.
+
+$max-width: 1500px;
+
+// -----------------------------------------------------------------------------
+// 2. Larguras internas dos elementos em layouts com sidebar
+// -----------------------------------------------------------------------------
+// O layout "single" tem três regiões: sidebar (autor), conteúdo principal, e
+// TOC (sumário). Ajustamos as proporções para o ganho de largura aproveitar
+// melhor o conteúdo principal e dar mais espaço ao TOC.
+
+$right-sidebar-width-narrow : 200px;  // default: 200px (mantido)
+$right-sidebar-width        : 280px;  // default: 250px (aumentado um pouco)
+$right-sidebar-width-wide   : 340px;  // default: 300px (aumentado um pouco)
+
+// -----------------------------------------------------------------------------
+// 3. Importação do tema (DEPOIS de redefinir variáveis acima)
+// -----------------------------------------------------------------------------
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
